@@ -1,0 +1,74 @@
+ /*Comapny*/
+ h2.entry-title,h1.entry-title{
+     padding-top: 20px;
+    clear: inherit;
+ }
+ img.img-responsive{
+    float: left;
+}
+header.entry-header {
+    padding-top: 2%;
+}
+.company-link{
+	margin: 0 10px;
+	color: #0288d1;
+    text-decoration: none;
+    border-bottom: none !important;
+    font-weight: 500;
+}
+.company-social,.company-ul{
+	list-style: none;
+}
+.company-ul li{
+	display: inline;
+	margin: 0 2px;
+}
+.company-social li{
+	display: inline;
+	font-size: 20px;
+}
+.company-social li a{
+	margin: 0 5px;
+}
+.company-social li i.fa {
+    font-size: 30px;
+}
+.project-link{
+	margin: 0;
+}
+.col-6 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.col-3 {
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+.col-9 {
+    width: 70%;
+    float: left;
+    padding: 0 15px;
+}
+.project-heading{
+	padding: 0;
+	margin: 20px 0 !important;
+	    letter-spacing: 0;
+    text-transform: capitalize;
+}
+.project-image{
+    border: 2px solid;
+    border-radius: 5px;
+}
+.sub-division{
+    border-bottom: 2px solid #a7a7a7;
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 0 0 5% 0;
+}
+.company-list{
+	padding: 0 30px;
+}
+

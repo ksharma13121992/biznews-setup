@@ -1,0 +1,92 @@
+/*header*/
+.navbar-brand{
+    color: #265a88 !important;
+    font-weight: bold; 
+}
+header#masthead{
+	height: 50px;
+}
+/*footer*/
+footer .site-info{
+	float: right;
+}
+ /*Comapny*/
+ .sub-heading{
+ 	font-weight: bold;
+ 	margin: 15px 0;
+ }
+ .entry-header{
+ 	position: fixed;
+ }
+ .entry-content{
+    border: 2px solid #ccc;
+    padding: 15px;
+ }
+ h2.entry-title{
+     padding-top: 20px;
+    clear: inherit;
+ }
+ img.img-responsive{
+    float: left;
+}
+.company-link{
+	margin: 0 10px;
+	color: #0288d1;
+    text-decoration: none;
+    border-bottom: none !important;
+    font-weight: bold !important;
+}
+.company-social,.company-ul{
+	list-style: none;
+	    margin: 0;
+    padding: 0;
+}
+.company-ul li{
+	display: inline;
+	margin: 0 2px;
+}
+.company-social li{
+	display: inline;
+	font-size: 20px;
+}
+.company-social li a{
+	margin: 0 5px;
+}
+.company-social li i.fa {
+    font-size: 30px;
+}
+.project-link{
+	margin: 0;
+}
+.project-heading{
+	padding: 0;
+	margin: 5px 0 !important;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+.project-image{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+.sub-division{
+    border-bottom: 2px solid #a7a7a7;
+    width: 100%;
+    clear: both;
+    float: left;
+    padding: 0 0 5% 0;
+}
+.company-list{
+	padding: 0 30px;
+}
+.company-sub-content {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 15px 0;
+    border: 2px solid #eee;
+}
+.content-heading{
+	font-weight: bold;
+    color: #7b7b7b;
+}
