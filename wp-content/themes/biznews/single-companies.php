@@ -16,7 +16,7 @@
 					?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-							<div class="entry-header">
+							<div class="entry-header company-header">
 								<?php
 									if ( is_single() ) :
 										the_title( '<h1 class="entry-title">', '</h1>' );

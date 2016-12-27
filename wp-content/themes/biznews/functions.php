@@ -115,8 +115,11 @@ function biznews_scripts() {
 
 	// font-awesome
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
-
+	wp_enqueue_style( 'select2-css', get_template_directory_uri() . '/css/select2.min.css' );
 	wp_enqueue_script( 'biznews-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'master-js', get_template_directory_uri() . '/js/master.js', array(), '20151215', true );
+	wp_enqueue_script( 'select2', get_template_directory_uri() . '/js/select2.full.js', array(), '20151215', true );
+	wp_enqueue_script( 'easing','http://thecodeplayer.com/uploads/js/jquery.easing.min.js');
 
 	wp_enqueue_script( 'biznews-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
