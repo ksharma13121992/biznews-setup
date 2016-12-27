@@ -1,5 +1,4 @@
 jQuery(document).ready(function($) {
-
 	// header menu 
 	$('ul.sub-menu').addClass('dropdown-menu');
 	$('li.dropdown > a').append('<span class="caret"></span>');
@@ -10,21 +9,16 @@ jQuery(document).ready(function($) {
 		'aria-haspopup' : 'true',
 		'aria-expanded' : 'false'
 	});
-	
 	// Form
 	var current_fs, next_fs, previous_fs; //fieldsets
 	var left, opacity, scale; //fieldset properties which we will animate
 	var animating; //flag to prevent quick multi-click glitches
-
 	$(".next").click(function(){
 		if(animating) return false;
 		animating = true;
 		
 		current_fs = $(this).parent();
 		next_fs = $(this).parent().next();
-		
-		//activate next step on progressbar using the index of next_fs
-		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 		
 		//show the next fieldset
 		next_fs.show(); 
@@ -38,8 +32,8 @@ jQuery(document).ready(function($) {
 				left = (now * 50)+"%";
 				//3. increase opacity of next_fs to 1 as it moves in
 				opacity = 1 - now;
-				current_fs.css({'transform': 'scale('+scale+')'});
-				next_fs.css({'left': left, 'opacity': opacity});
+				current_fs.css({'transform': 'scale('+scale+')','position':'relative'});
+				next_fs.css({'left': left, 'opacity': opacity ,'position':'aboslute'});
 			}, 
 			duration: 800, 
 			complete: function(){
@@ -58,9 +52,6 @@ jQuery(document).ready(function($) {
 		current_fs = $(this).parent();
 		previous_fs = $(this).parent().prev();
 		
-		//de-activate current step on progressbar
-		$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-		
 		//show the previous fieldset
 		previous_fs.show(); 
 		//hide the current fieldset with style
@@ -73,8 +64,8 @@ jQuery(document).ready(function($) {
 				left = ((1-now) * 50)+"%";
 				//3. increase opacity of previous_fs to 1 as it moves in
 				opacity = 1 - now;
-				current_fs.css({'left': left});
-				previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+				current_fs.css({'left': left,'position':'relative'});
+				previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity,'position':'aboslute'});
 			}, 
 			duration: 800, 
 			complete: function(){
